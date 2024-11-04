@@ -10,6 +10,9 @@ function Ex001() {
                         <Relogio />
                     </div>
                 </div>
+                <Link to="/" className="inline-block mt-4 text-blue-500 hover:underline">
+                    Voltar para o Home
+                </Link>
         </div>
     );
 }
