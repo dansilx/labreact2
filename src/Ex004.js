@@ -12,7 +12,7 @@ const user = {
 
 const ingredientes = ['Farinha', 'Açúcar', 'Ovos'];
 
-function Atv03() {
+function Ex004() {
     return (
         <div className="container mx-auto text-center mt-10">
             <h2 className="text-2xl font-bold text-gray-800 mb-6">Exercício 004</h2>
