@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const user = {
     name: 'Hedy Lamarr',
-    image: 'https://i.imgur.com/yXOvdOSs.jpg'
+    image: 'https://upload.wikimedia.org/wikipedia/commons/d/d8/Hedy_Lamarr_in_The_Heavenly_Body_1944.jpg'
 };
 
 const ingredientes = ['Farinha', 'Açúcar', 'Ovos'];
@@ -27,7 +27,7 @@ function Atv03() {
             </div>
             
             <div className="mb-6">
-                <Avatar person={user} size={150} />
+                <Avatar person={user} size={100} />
             </div>
             
             <div className="mb-6">
