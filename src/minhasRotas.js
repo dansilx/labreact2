@@ -12,8 +12,8 @@ export default function MinhasRotas() {
                 <Route path="/ex001" element={<Ex001 />} />
                 <Route path="/ex002" element={<Ex002 />} />
                 <Route path="/ex003" element={<Ex003 />} />
-                <Route path="/ex003" element={<Ex004 />} />
-                <Route path="/ex003" element={<Ex005 />} />
+                <Route path="/ex004" element={<Ex004 />} />
+                <Route path="/ex005" element={<Ex005 />} />
             </Routes>
         </BrowserRouter>            
     );
