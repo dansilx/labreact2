@@ -3,8 +3,8 @@ import Home from "./Home";
 import Ex001 from './Ex001';
 import Ex002 from './Ex002';
 import Ex003 from './Ex003';
-import Ex003 from './Ex004';
-import Ex003 from './Ex005';
+import Ex004 from './Ex004';
+import Ex005 from './Ex005';
 
 export default function MinhasRotas() {
     return (
