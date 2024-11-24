@@ -39,6 +39,14 @@ const Home = () => {
                             Exercício 004
                         </Link>
                     </li>
+                    <li className="nav-item">
+                        <Link
+                            className="nav-link bg-blue-600 text-white py-2 px-4 rounded-lg transition-colors hover:bg-blue-500"
+                            to="/Ex005"
+                        >
+                            Exercício 005
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </div>
