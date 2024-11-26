@@ -10,7 +10,7 @@ function Ex003() {
                         <Contador />
                     </div>
                 </div>
-                <Link to="/" className="inline-block m-8 text-blue-500 hover:underline">
+                <Link to="/" className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">
                     Voltar para o Home
                 </Link>
         </div>
