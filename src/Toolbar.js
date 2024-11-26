@@ -6,11 +6,21 @@ function Toolbar() {
   }
 
   return (
-    <div class="p-3 mb-3 border rounded bg-light">
-      <h4>Toolbar</h4>
-      <div class="d-flex justify-content-around">
-        <button class="btn btn-success" onClick={() => handleClick('Play Movie')}>Play Movie</button>
-        <button class="btn btn-success" onClick={() => handleClick('Upload Image')}>Upload Image</button>
+    <div className="p-4 mb-6 border rounded bg-gray-50 shadow-md">
+      <h4 className="text-xl font-semibold mb-3">Toolbar</h4>
+      <div className="flex justify-around">
+        <button
+          className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+          onClick={() => handleClick('Play Movie')}
+        >
+          Play Movie
+        </button>
+        <button
+          className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+          onClick={() => handleClick('Upload Image')}
+        >
+          Upload Image
+        </button>
       </div>
     </div>
   );

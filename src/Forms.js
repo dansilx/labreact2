@@ -9,11 +9,23 @@ function Forms() {
   }
 
   return (
-    <div class="p-3 mb-3 border rounded bg-light">
-        <h4>Forms com múltiplas entradas</h4>
-        <input class="form-control" placeholder="Digite o nome" name="name" value={formData.name} onChange={handleChange} />
-        <input class="form-control" placeholder="Digite o email" name="email" value={formData.email} onChange={handleChange} />
-        <p class="mt-3">Dados digitados: {formData.name} - {formData.email}</p>
+    <div className="p-4 mb-4 border rounded-lg bg-gray-100">
+      <h4 className="text-lg font-semibold">Forms com múltiplas entradas</h4>
+      <input
+        className="form-control mt-3 border border-gray-300 rounded p-2 w-full"
+        placeholder="Digite o nome"
+        name="name"
+        value={formData.name}
+        onChange={handleChange}
+      />
+      <input
+        className="form-control mt-3 border border-gray-300 rounded p-2 w-full"
+        placeholder="Digite o email"
+        name="email"
+        value={formData.email}
+        onChange={handleChange}
+      />
+      <p className="mt-3">Dados digitados: {formData.name} - {formData.email}</p>
     </div>
   );
 }

@@ -14,14 +14,19 @@ function Gallery() {
   }
 
   return (
-    <div class="p-3 mb-3 border rounded bg-light d-flex justify-content-center align-items-center flex-column">
-        <h4>Gallery</h4>
-        <img class
-            src={images[currentIndex].src}
-            alt={images[currentIndex].title}
-            style={{ maxWidth: '200px', maxHeight: '200px', width: '100%', height: 'auto' }}
-        />
-        <button class="btn btn-success mt-3" onClick={handleNext}>Próximo</button>
+    <div className="p-4 mb-6 border rounded bg-gray-50 shadow-md flex flex-col items-center">
+      <h4 className="text-xl font-semibold mb-3">Gallery</h4>
+      <img
+        src={images[currentIndex].src}
+        alt={images[currentIndex].title}
+        className="max-w-full max-h-52 object-contain mb-3"
+      />
+      <button
+        className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+        onClick={handleNext}
+      >
+        Próximo
+      </button>
     </div>
   );
 }

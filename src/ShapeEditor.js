@@ -8,10 +8,18 @@ function ShapeEditor() {
   }
 
   return (
-    <div class="p-3 mb-3 border rounded bg-light d-flex flex-column justify-content-center align-items-center">
-        <h4>Shape Editor</h4>
-        <div style={{ backgroundColor: shape.color, width: shape.size, height: shape.size }} />
-        <button class="btn btn-success mt-3" onClick={changeColor}>Mudar Cor</button>
+    <div className="p-4 mb-4 border rounded-lg bg-gray-100 flex flex-col justify-center items-center">
+      <h4 className="text-lg font-semibold">Shape Editor</h4>
+      <div
+        style={{ backgroundColor: shape.color, width: shape.size, height: shape.size }}
+        className="mt-3"
+      />
+      <button
+        className="btn btn-primary mt-3"
+        onClick={changeColor}
+      >
+        Mudar Cor
+      </button>
     </div>
   );
 }

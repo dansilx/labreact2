@@ -9,14 +9,19 @@ function CounterList() {
   }
 
   return (
-    <div class="p-3 mb-3 border rounded bg-light">
-        <h4>Counter List</h4>
-        {counters.map((count, index) => (
-            <div key={index}>
-            <p>Contador {index + 1}: {count}</p>
-            <button class="btn btn-success mb-5" onClick={() => incrementCounter(index)}>Incrementar</button>
-            </div>
-        ))}
+    <div className="p-4 mb-4 border rounded-lg bg-gray-100">
+      <h4 className="text-lg font-semibold">Counter List</h4>
+      {counters.map((count, index) => (
+        <div key={index} className="mt-3">
+          <p className="text-sm">Contador {index + 1}: {count}</p>
+          <button
+            className="btn btn-primary mt-2"
+            onClick={() => incrementCounter(index)}
+          >
+            Incrementar
+          </button>
+        </div>
+      ))}
     </div>
   );
 }

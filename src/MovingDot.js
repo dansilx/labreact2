@@ -8,9 +8,9 @@ function MovingDot() {
   }
 
   return (
-    <div class="p-3 mb-3 border rounded bg-light" onMouseMove={handleMouseMove}>
-        <h4>Moving Dot</h4>
-        <p class="mt-3">O mouse está na posição: ({position.x}, {position.y})</p>
+    <div className="p-4 mb-4 border rounded-lg bg-gray-100" onMouseMove={handleMouseMove}>
+      <h4 className="text-lg font-semibold">Moving Dot</h4>
+      <p className="mt-3">O mouse está na posição: ({position.x}, {position.y})</p>
     </div>
   );
 }

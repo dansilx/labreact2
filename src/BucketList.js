@@ -7,32 +7,34 @@ function BucketList() {
   ]);
 
   function toggleItem(id) {
-    setItems(items.map(item => 
+    setItems(items.map(item =>
       item.id === id ? { ...item, completed: !item.completed } : item
     ));
   }
 
   return (
-    <div class="p-3 mb-3 border rounded bg-light">
-        <h4>Bucket List</h4>
-        <ul class="list-group">
-            {items.map(item => (
-            <li class="list-group-item" key={item.id}>
-                <input class="form-check-input"
-                    type="checkbox"
-                    checked={item.completed}
-                    onChange={() => toggleItem(item.id)}
-                />
-                <span
-                    style={{
-                        textDecoration: item.completed ? 'line-through' : 'none',
-                    }}
-                    >
-                    {item.text}
-                </span>
-            </li>
-            ))}
-        </ul>
+    <div className="p-4 mb-4 border rounded-lg bg-gray-100">
+      <h4 className="text-lg font-semibold">Bucket List</h4>
+      <ul className="mt-3 space-y-2">
+        {items.map(item => (
+          <li
+            key={item.id}
+            className="flex items-center gap-3 p-2 rounded-lg bg-white shadow-md"
+          >
+            <input
+              type="checkbox"
+              className="form-checkbox h-5 w-5 text-primary"
+              checked={item.completed}
+              onChange={() => toggleItem(item.id)}
+            />
+            <span
+              className={`text-sm ${item.completed ? 'line-through text-gray-400' : ''}`}
+            >
+              {item.text}
+            </span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

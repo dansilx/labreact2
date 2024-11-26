@@ -8,10 +8,16 @@ function Form() {
   }
 
   return (
-    <div class="p-3 mb-3 border rounded bg-light">
-        <h4>Form</h4>
-        <input class="form-control" placeholder="Digite qualquer coisa" type="text" value={text} onChange={handleChange} />
-        <p class="mt-3">Você digitou: {text}</p>
+    <div className="p-4 mb-6 border rounded bg-gray-50 shadow-md">
+      <h4 className="text-xl font-semibold mb-3">Form</h4>
+      <input
+        className="w-full p-2 border rounded mb-3"
+        placeholder="Digite qualquer coisa"
+        type="text"
+        value={text}
+        onChange={handleChange}
+      />
+      <p className="text-lg">Você digitou: {text}</p>
     </div>
   );
 }
