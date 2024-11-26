@@ -19,7 +19,7 @@ function Gallery() {
       <img
         src={images[currentIndex].src}
         alt={images[currentIndex].title}
-        className="w-40 h-40 object-cover mb-3 rounded-lg"
+        className="w-60 h-40 object-cover mb-3 rounded-lg"
       />
       <button
         className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
